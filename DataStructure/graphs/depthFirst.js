@@ -1,8 +1,16 @@
 //Graph - Nodes and Edges
 //Depth First Traversal - Travel depth first - in 1 direction- Stacks
-//Breadth First Traversal- Connecting all connected nodes - Queues
-
+// DFS search says that once you have visited a vertex, start exploring its child nodes and sub child nodes
+// until there is no node to explore for that vertex and then move to next vertex
 //Depth first uses Stacks
+
+//Algorithm
+//1-start from the root element
+//2-push root in the stack
+//3-start poping from stack unless stack is empty
+//4-If not visited, add it to visited[to have a check to not visit the same node again],
+//then go on checking the neighbours, if not visited push it to stack
+//5- go to line 3
 const graph = {
     a:['b','c'],
     b:['a','c','d'],
